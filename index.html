@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slow Fashion</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 100px; }
+        input { padding: 12px; border: 1px solid #000; width: 200px; margin-bottom: 10px; }
+        button { padding: 12px 25px; background: #000; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h1>Slow Fashion</h1>
+        <p>Enter Access Code</p>
+        <input type="password" id="pass" placeholder="Your Code...">
+        <br>
+        <button onclick="check()">LOGIN</button>
+    </div>
+    <div id="content" style="display:none;">
+        <h1>Welcome to Usma Slow Fashion</h1>
+        <p>Aapki dukaan ab internet par chalu hai!</p>
+    </div>
+    <script>
+        function check() {
+            if(document.getElementById("pass").value === "3015") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else { alert("Galat Code!"); }
+        }
+    </script>
+</body>
+</html>
