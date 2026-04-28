@@ -1,4 +1,119 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Fashion | Welcome</title>
+    <style>
+        body {
+            margin: 0; font-family: 'Helvetica', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; background-color: #fff; color: #000;
+        }
+        .container { text-align: center; width: 80%; max-width: 300px; }
+        h1 { font-weight: 300; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px; }
+        input {
+            width: 100%; padding: 12px; margin-bottom: 15px;
+            border: 1px solid #000; box-sizing: border-box; font-size: 14px;
+        }
+        button {
+            width: 100%; padding: 12px; background: #000; color: #fff;
+            border: none; cursor: pointer; letter-spacing: 2px;
+        }
+        #main-site { display: none; }
+        .whatsapp-link {
+            text-decoration: none; color: #000; border: 1px solid #000;
+            padding: 10px 20px; display: inline-block; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-form" class="container">
+        <h1>Slow Fashion</h1>
+        <p style="font-size: 12px; color: #666;">PLEASE ENTER YOUR DETAILS</p>
+        <input type="text" id="userName" placeholder="Full Name" required>
+        <input type="email" id="userEmail" placeholder="Email Address" required>
+        <input type="tel" id="userPhone" placeholder="Mobile Number" required>
+        <button onclick="showSite()">ENTER STORE</button>
+    </div>
+
+    <div id="main-site" class="container">
+        <h1>Slow Fashion</h1>
+        <p>WELCOME TO THE COLLECTION</p>
+        <p style="font-size: 13px;">Aapki Details Submit Ho Gayi Hain.</p>
+        <br>
+        <a href="https://wa.me/919876543210" class="whatsapp-link">MESSAGE ON WHATSAPP</a>
+    </div>
+
+    <script>
+        function showSite() {
+            var name = document.getElementById("userName").value;
+            var email = document.getElementById("userEmail").value;
+            var phone = document.getElementById("userPhone").value;
+
+            if(name && email && phone) {
+                // Yahan customer ki details aapko mil sakti hain (Future mein)
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("main-site").style.display = "block";
+            } else {
+                alert("Please fill all details!");
+            }
+        }
+    </script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Fashion | Welcome</title>
+    <style>
+        body {
+            margin: 0; font-family: 'Helvetica', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; background-color: #fff; color: #000;
+        }
+        .container { text-align: center; width: 80%; max-width: 300px; }
+        h1 { font-weight: 300; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px; }
+        input {
+            width: 100%; padding: 12px; margin-bottom: 15px;
+            border: 1px solid #000; box-sizing: border-box; font-size: 14px;
+        }
+        button {
+            width: 100%; padding: 12px; background: #000; color: #fff;
+            border: none; cursor: pointer; letter-spacing: 2px;
+        }
+        #main-site { display: none; }
+        .whatsapp-link {
+            text-decoration: none; color: #000; border: 1px solid #000;
+            padding: 10px 20px; display: inline-block; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-form" class="container">
+        <h1>Slow Fashion</h1>
+        <p style="font-size: 12px; color: #666;">PLEASE ENTER YOUR DETAILS</p>
+        <input type="text" id="userName" placeholder="Full Name" required>
+        <input type="email" id="userEmail" placeholder="Email Address" required>
+        <input type="tel" id="userPhone" placeholder="Mobile Number" required>
+        <button onclick="showSite()">ENTER STORE</button>
+    </div>
+
+    <div id="main-site" class="container">
+        <h1>Slow Fashion</h1>
+        <p>WELCOME TO THE COLLECTION</p>
+        <p style="font-size: 13px;">Aapki Details Submit Ho Gayi Hain.</p>
+        <br>
+        <a href="https://wa.me/919876543210" class="whatsapp-link">MESSAGE ON WHATSAPP</a>
+    </div>
+
+    <script>
+        function showSite() {
+            var name = do!DOCTYPE html>
 <html>
 <head>
     <title>Slow Fashion</title>
