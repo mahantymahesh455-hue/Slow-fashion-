@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLOW FASHION | Luxury Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap');
+        body {
+            margin: 0; padding: 0; background: #000; color: #d4af37;
+            font-family: 'Montserrat', sans-serif;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center;
+        }
+        .luxury-card {
+            background: rgba(0, 0, 0, 0.9); padding: 40px; border: 1px solid #d4af37;
+            text-align: center; width: 90%; max-width: 450px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; letter-spacing: 6px; margin: 0; }
+        .tagline { font-size: 10px; letter-spacing: 4px; margin-bottom: 30px; opacity: 0.8; }
+        input {
+            width: 100%; padding: 12px; margin-bottom: 15px; background: transparent;
+            border: 1px solid #444; color: #fff; font-size: 14px; box-sizing: border-box;
+        }
+        .row { display: flex; gap: 10px; }
+        button {
+            width: 100%; padding: 15px; background: #d4af37; color: #000;
+            border: none; cursor: pointer; font-weight: bold; letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        #site-content { display: none; }
+        .wa-link { color: #d4af37; text-decoration: none; border: 1px solid #d4af37; padding: 10px 20px; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div id="registration-form" class="luxury-card">
+        <h1>SLOW FASHION</h1>
+        <div class="tagline">EXCLUSIVE ACCESS</div>
+        <div class="row">
+            <input type="text" id="fn" placeholder="First Name" required>
+            <input type="text" id="ln" placeholder="Last Name" required>
+        </div>
+        <input type="email" id="em" placeholder="Email Address" required>
+        <input type="tel" id="ph" placeholder="Mobile Number" required>
+        <button onclick="enterSite()">Enter Store</button>
+    </div>
+
+    <div id="site-content" class="luxury-card">
+        <h1>WELCOME</h1>
+        <p>Your luxury experience starts here.</p>
+        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=300&q=80" style="width:100%; border: 1px solid #d4af37; margin: 15px 0;">
+        <br>
+        <a href="https://wa.me/91YOURNUMBER" class="wa-link">WHATSAPP US</a>
+    </div>
+
+    <script>
+        function enterSite() {
+            if(document.getElementById('fn').value && document.getElementById('em').value && document.getElementById('ph').value) {
+                document.getElementById('registration-form').style.display = 'none';
+                document.getElementById('site-content').style.display = 'block';
+            } else { alert("Please fill all details!"); }
+        }
+    </script>
+</body>
+</html>
